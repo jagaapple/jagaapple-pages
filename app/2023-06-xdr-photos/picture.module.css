@@ -1,14 +1,15 @@
 .wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 10;
-  border-top: 2px solid var(--APPLICATION-COLOR--base-darkest);
-  border-bottom: 2px solid var(--APPLICATION-COLOR--base-darkest);
+  aspect-ratio: 3 / 2;
+  box-shadow: 0 2px 0 0 var(--APPLICATION-COLOR--base-darkest), 0 -2px 0 0 var(--APPLICATION-COLOR--base-darkest);
 }
 
 .wrapper > img {
+  position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }

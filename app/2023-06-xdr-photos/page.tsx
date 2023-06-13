@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Image, Metadata } from "packages/next";
 import { getFullPageTitle } from "packages/settings";
 
@@ -73,8 +74,8 @@ export default function Page() {
         caption="Sony α7 IV / FE 35mm F1.4 GM / ISO 100, F5.6, 1/125"
         captionPosition="LEADING_BOTTOM"
       >
-        <Image src={photo01SDR} alt="" fill unoptimized />
-        <Image src={photo01HDR} alt="" fill unoptimized />
+        <img src={photo01SDR.src} alt="" />
+        <img src={photo01HDR.src} alt="" />
       </Picture>
 
       <p>
@@ -96,8 +97,8 @@ export default function Page() {
         caption="Sony α7 III / FE 85mm F1.8 / ISO 100, F2.8, 1/320"
         captionPosition="LEADING_TOP"
       >
-        <Image src={photo02SDR} alt="" fill unoptimized />
-        <Image src={photo02HDR} alt="" fill unoptimized />
+        <img src={photo02SDR.src} alt="" />
+        <img src={photo02HDR.src} alt="" />
       </Picture>
 
       <p>
@@ -117,8 +118,8 @@ export default function Page() {
         caption="Sony α7 III / FE 20mm F1.8 G / ISO 800, F1.8, 1/15"
         captionPosition="LEADING_TOP"
       >
-        <Image src={photo03SDR} alt="" fill unoptimized />
-        <Image src={photo03HDR} alt="" fill unoptimized />
+        <img src={photo03SDR.src} alt="" />
+        <img src={photo03HDR.src} alt="" />
       </Picture>
 
       <p>HDR と人工物の相性は抜群で、このダイナミックレンジの広さが、より画をシャープに仕上げてくれます。</p>
@@ -128,8 +129,8 @@ export default function Page() {
         caption="Sony α7 III / FE 20mm F1.8 G / ISO 400, F1.8, 1/50"
         captionPosition="LEADING_BOTTOM"
       >
-        <Image src={photo04SDR} alt="" fill unoptimized />
-        <Image src={photo04HDR} alt="" fill unoptimized />
+        <img src={photo04SDR.src} alt="" />
+        <img src={photo04HDR.src} alt="" />
       </Picture>
 
       <p>風景以外にも、こうした幾何学的な被写体も HDR と相性最高です。</p>
@@ -139,8 +140,8 @@ export default function Page() {
         caption="Sony α7 III / FE 35mm F1.4 GM / ISO 800, F5.6, 1/60"
         captionPosition="TRAILING_TOP"
       >
-        <Image src={photo05SDR} alt="" fill unoptimized />
-        <Image src={photo05HDR} alt="" fill unoptimized />
+        <img src={photo05SDR.src} alt="" />
+        <img src={photo05HDR.src} alt="" />
       </Picture>
 
       <p>
@@ -154,8 +155,8 @@ export default function Page() {
         caption="Sony α7 III / FE 35mm F1.4 GM / ISO 500, F1.4, 1/10"
         captionPosition="TRAILING_BOTTOM"
       >
-        <Image src={photo06SDR} alt="" fill unoptimized />
-        <Image src={photo06HDR} alt="" fill unoptimized />
+        <img src={photo06SDR.src} alt="" />
+        <img src={photo06HDR.src} alt="" />
       </Picture>
 
       <p>HDR が最も映えるのは、やはり夜景でしょう。</p>
