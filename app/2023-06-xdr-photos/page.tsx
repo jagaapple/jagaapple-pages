@@ -10,6 +10,7 @@ const title = "今更だけど、XDR 対応の Apple 製品で見る HDR 写真�
 
 export const metadata = {
   title: getFullPageTitle(title),
+  twitter: { images: eyecatch.src },
 } satisfies Metadata;
 
 export default function Page() {
