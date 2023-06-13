@@ -6,7 +6,8 @@ import "public/application.css";
 import { Noto_Sans_JP } from "next/font/google";
 
 import { clsx } from "packages/react";
-import { appName, appCopyright } from "packages/settings";
+import { Metadata } from "packages/next";
+import { appName, appCopyright, appTwitterId } from "packages/settings";
 
 import { mixinStyles } from "./shared";
 import styles from "./layout.module.css";
@@ -15,8 +16,13 @@ const noto = Noto_Sans_JP({ subsets: ["latin"], weight: ["400", "700", "900"] })
 
 export const metadata = {
   title: appName,
-  description: "@jagaapple による雑記です。明日消えているかもしれません。",
-};
+  description: `${appTwitterId} による雑記です。明日消えているかもしれません。`,
+  applicationName: appName,
+  twitter: {
+    site: appTwitterId,
+    creator: appTwitterId,
+  },
+} satisfies Metadata;
 
 export default function RootLayout(props: React.PropsWithChildren<unknown>) {
   return (
@@ -33,7 +39,7 @@ export default function RootLayout(props: React.PropsWithChildren<unknown>) {
           <div>
             Created by{" "}
             <a className={mixinStyles.textLink} href="https://tawitter.com/jagaapple" target="_blank">
-              @jagaapple
+              {appTwitterId}
             </a>
             .
           </div>
