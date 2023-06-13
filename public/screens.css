@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/* stylelint-disable */
+:root {
+  --APPLICATION-SCREEN--width-full-screen: 1280px;
+  --APPLICATION-SCREEN--width-desktop: 1024px;
+  --APPLICATION-SCREEN--width-tablet: 768px;
+  --APPLICATION-SCREEN--width-phablet: 620px;
+  --APPLICATION-SCREEN--width-phone: 414px;
+  --APPLICATION-SCREEN--width-minimum: 375px;
+}

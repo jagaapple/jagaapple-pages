@@ -1,0 +1,57 @@
+{
+  "Scheme (Application Color Base Darkest)": {
+    "prefix": "application-color-base-darkest",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--base-darkest"]
+  },
+  "Scheme (Application Color Base Dark)": {
+    "prefix": "application-color-base-dark",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--base-dark"]
+  },
+  "Scheme (Application Color Base Regular)": {
+    "prefix": "application-color-base-regular",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--base-regular"]
+  },
+  "Scheme (Application Color Base Light)": {
+    "prefix": "application-color-base-light",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--base-light"]
+  },
+  "Scheme (Application Color Base Lightest)": {
+    "prefix": "application-color-base-lightest",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--base-lightest"]
+  },
+  "Scheme (Application Color Blue Dark)": {
+    "prefix": "application-color-blue-dark",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--blue-dark"]
+  },
+  "Scheme (Application Color Blue Regular)": {
+    "prefix": "application-color-blue-regular",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--blue-regular"]
+  },
+  "Scheme (Application Color Blue Regular050)": {
+    "prefix": "application-color-blue-regular050",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--blue-regular050"]
+  },
+  "Scheme (Application Color Green Regular)": {
+    "prefix": "application-color-green-regular",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--green-regular"]
+  },
+  "Scheme (Application Color Orange Regular)": {
+    "prefix": "application-color-orange-regular",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--orange-regular"]
+  },
+  "Scheme (Application Color Red Regular)": {
+    "prefix": "application-color-red-regular",
+    "scope": "css",
+    "body": ["--APPLICATION-COLOR--red-regular"]
+  }
+}

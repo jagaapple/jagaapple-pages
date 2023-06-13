@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+html {
+  min-height: 100dvh;
+  font-size: 0;
+  line-height: 1;
+}
+
+body {
+  width: 100%;
+  min-width: var(--APPLICATION-SCREEN--width-minimum);
+  min-height: 100dvh;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  overflow-wrap: anywhere;
+  background-color: var(--APPLICATION-COLOR--base-lightest);
+}
+@supports not (overflow-wrap: anywhere) {
+  body {
+    word-break: break-word;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 4px; /* For a focus ring */
+  -webkit-tap-highlight-color: transparent;
+}
+a:hover,
+a:active {
+  outline-width: initial; /* Overwrites ress. */
+}
+b {
+  font-weight: bold;
+  color: var(--APPLICATION-COLOR--base-darkest);
+}
+img {
+  pointer-events: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+a,
+input[type="button"],
+input[type="submit"],
+button {
+  transition-duration: 300ms;
+  transition-property: scale;
+}
+input[type="button"],
+input[type="submit"],
+button {
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+@media (pointer: fine) {
+  a:not([data-nos]):active,
+  :is(input[type="button"], input[type="submit"], button):not(:disabled, [data-nos]):active {
+    scale: 0.93;
+  }
+}
+
+a:focus,
+:is(input[type="button"], input[type="submit"], button):not(:disabled):focus {
+  outline: none;
+}
+a:focus-visible,
+:is(input[type="button"], input[type="submit"], button):not(:disabled):focus-visible {
+  outline: 4px solid var(--APPLICATION-COLOR--blue-regular050);
+  outline-offset: 0;
+}

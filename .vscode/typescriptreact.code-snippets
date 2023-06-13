@@ -1,0 +1,45 @@
+{
+  "Import styles from CSS": {
+    "prefix": "import styles",
+    "scope": "typescript,typescriptreact",
+    "body": ["import styles from \"./${TM_FILENAME/(\\..+tsx)$//}.module.css\";"]
+  },
+  "Component template": {
+    "prefix": "component template",
+    "scope": "typescriptreact",
+    "body": [
+      "import { clsx, StandardProps } from \"packages/react\";",
+      "",
+      "import styles from \"./${TM_FILENAME/(^\\w+)?(\\-)?(\\w+)?(\\..+$)?/$1$2$3/g}.module.css\";",
+      "",
+      "type Props = Readonly<{",
+      "  $1",
+      "}> & Pick<StandardProps, \"wrapperClassName\">;",
+      "",
+      "export function ${TM_FILENAME/(^\\w+)?\\-?(\\w+)?(\\..+$)?/${1:/capitalize}${2:/capitalize}/g}(props: Props) {",
+      "  return (",
+      "    <div className={clsx(styles.wrapper, props.wrapperClassName)}>",
+      "      $2",
+      "    </div>",
+      "  );",
+      "}",
+      ""
+    ]
+  },
+  "Container template": {
+    "prefix": "container template",
+    "scope": "typescriptreact",
+    "body": [
+      "import { ${TM_FILENAME/(^\\w+)?\\-?(\\w+)?(\\..+$)?/${1:/capitalize}${2:/capitalize}/g} } from \"./${TM_FILENAME/(^\\w+)?(\\-)?(\\w+)?(\\..+$)?/$1$2$3/g}.component\";",
+      "",
+      "type Props = Omit<React.ComponentProps<typeof ${TM_FILENAME/(^\\w+)?\\-?(\\w+)?(\\..+$)?/${1:/capitalize}${2:/capitalize}/g}>, $1>;",
+      "",
+      "export function ${TM_FILENAME/(^\\w+)?\\-?(\\w+)?(\\..+$)?/${1:/capitalize}${2:/capitalize}/g}Container(props: Props) {",
+      "  $2",
+      "",
+      "  return <${TM_FILENAME/(^\\w+)?\\-?(\\w+)?(\\..+$)?/${1:/capitalize}${2:/capitalize}/g} {...props} />;",
+      "}",
+      ""
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+/* stylelint-disable */
+:root {
+  --APPLICATION-COLOR--base-darkest: rgb(4, 16, 19);
+  --APPLICATION-COLOR--base-dark: rgb(82, 103, 108);
+  --APPLICATION-COLOR--base-regular: rgb(180, 195, 199);
+  --APPLICATION-COLOR--base-light: rgb(247, 249, 250);
+  --APPLICATION-COLOR--base-lightest: rgb(255, 255, 255);
+  --APPLICATION-COLOR--blue-dark: rgb(12, 122, 164);
+  --APPLICATION-COLOR--blue-regular: rgb(31, 154, 201);
+  --APPLICATION-COLOR--blue-regular050: rgba(31, 154, 201, 0.5);
+  --APPLICATION-COLOR--green-regular: rgb(130, 170, 72);
+  --APPLICATION-COLOR--orange-regular: rgb(239, 126, 70);
+  --APPLICATION-COLOR--red-regular: rgb(200, 59, 59);
+}

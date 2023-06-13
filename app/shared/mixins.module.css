@@ -1,0 +1,16 @@
+.textLink {
+  margin: 0 0.25em;
+  line-height: 1.5;
+  color: var(--APPLICATION-COLOR--blue-regular);
+  text-decoration: underline;
+  border-radius: 2px; /* For a focus ring */
+}
+.textLink:hover {
+  color: var(--APPLICATION-COLOR--blue-dark);
+  transform: initial;
+}
+.textLink svg {
+  height: 0.85em;
+  margin-left: 0.25em;
+  fill: currentColor;
+}

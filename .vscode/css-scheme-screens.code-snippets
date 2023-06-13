@@ -1,0 +1,32 @@
+{
+  "Scheme (Application Screen Width Full Screen)": {
+    "prefix": "application-screen-width-full-screen",
+    "scope": "css",
+    "body": ["--APPLICATION-SCREEN--width-full-screen"]
+  },
+  "Scheme (Application Screen Width Desktop)": {
+    "prefix": "application-screen-width-desktop",
+    "scope": "css",
+    "body": ["--APPLICATION-SCREEN--width-desktop"]
+  },
+  "Scheme (Application Screen Width Tablet)": {
+    "prefix": "application-screen-width-tablet",
+    "scope": "css",
+    "body": ["--APPLICATION-SCREEN--width-tablet"]
+  },
+  "Scheme (Application Screen Width Phablet)": {
+    "prefix": "application-screen-width-phablet",
+    "scope": "css",
+    "body": ["--APPLICATION-SCREEN--width-phablet"]
+  },
+  "Scheme (Application Screen Width Phone)": {
+    "prefix": "application-screen-width-phone",
+    "scope": "css",
+    "body": ["--APPLICATION-SCREEN--width-phone"]
+  },
+  "Scheme (Application Screen Width Minimum)": {
+    "prefix": "application-screen-width-minimum",
+    "scope": "css",
+    "body": ["--APPLICATION-SCREEN--width-minimum"]
+  }
+}
