@@ -4,18 +4,6 @@ import { getFullPageTitle } from "packages/settings";
 
 import { Picture } from "./picture.component";
 import eyecatch from "./opengraph-image.jpg";
-import photo01SDR from "./photo-01-sdr.jpg";
-import photo01HDR from "./photo-01-hdr.avif";
-import photo02SDR from "./photo-02-sdr.jpg";
-import photo02HDR from "./photo-02-hdr.avif";
-import photo03SDR from "./photo-03-sdr.jpg";
-import photo03HDR from "./photo-03-hdr.avif";
-import photo04SDR from "./photo-04-sdr.jpg";
-import photo04HDR from "./photo-04-hdr.avif";
-import photo05SDR from "./photo-05-sdr.jpg";
-import photo05HDR from "./photo-05-hdr.avif";
-import photo06SDR from "./photo-06-sdr.jpg";
-import photo06HDR from "./photo-06-hdr.avif";
 import styles from "./page.module.css";
 
 const title = "今更だけど、XDR 対応の Apple 製品で見る HDR 写真が綺麗すぎて笑っちゃう";
@@ -29,7 +17,7 @@ export default function Page() {
     <article className={styles.wrapper}>
       <header className={styles.header}>
         <time className={styles.createdAt}>2023/06/03</time>
-        <Image src={eyecatch} alt="" />
+        <Image src={eyecatch} alt="" priority />
         <h2 className={styles.heading}>{title}</h2>
       </header>
 
@@ -74,8 +62,8 @@ export default function Page() {
         caption="Sony α7 IV / FE 35mm F1.4 GM / ISO 100, F5.6, 1/125"
         captionPosition="LEADING_BOTTOM"
       >
-        <img src={photo01SDR.src} alt="" />
-        <img src={photo01HDR.src} alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-01-sdr.jpg" alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-01-hdr.avif" alt="" />
       </Picture>
 
       <p>
@@ -97,8 +85,8 @@ export default function Page() {
         caption="Sony α7 III / FE 85mm F1.8 / ISO 100, F2.8, 1/320"
         captionPosition="LEADING_TOP"
       >
-        <img src={photo02SDR.src} alt="" />
-        <img src={photo02HDR.src} alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-02-sdr.jpg" alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-02-hdr.avif" alt="" />
       </Picture>
 
       <p>
@@ -118,8 +106,8 @@ export default function Page() {
         caption="Sony α7 III / FE 20mm F1.8 G / ISO 800, F1.8, 1/15"
         captionPosition="LEADING_TOP"
       >
-        <img src={photo03SDR.src} alt="" />
-        <img src={photo03HDR.src} alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-03-sdr.jpg" alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-03-hdr.avif" alt="" />
       </Picture>
 
       <p>HDR と人工物の相性は抜群で、このダイナミックレンジの広さが、より画をシャープに仕上げてくれます。</p>
@@ -129,8 +117,8 @@ export default function Page() {
         caption="Sony α7 III / FE 20mm F1.8 G / ISO 400, F1.8, 1/50"
         captionPosition="LEADING_BOTTOM"
       >
-        <img src={photo04SDR.src} alt="" />
-        <img src={photo04HDR.src} alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-04-sdr.jpg" alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-04-hdr.avif" alt="" />
       </Picture>
 
       <p>風景以外にも、こうした幾何学的な被写体も HDR と相性最高です。</p>
@@ -140,8 +128,8 @@ export default function Page() {
         caption="Sony α7 III / FE 35mm F1.4 GM / ISO 800, F5.6, 1/60"
         captionPosition="TRAILING_TOP"
       >
-        <img src={photo05SDR.src} alt="" />
-        <img src={photo05HDR.src} alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-05-sdr.jpg" alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-05-hdr.avif" alt="" />
       </Picture>
 
       <p>
@@ -155,8 +143,8 @@ export default function Page() {
         caption="Sony α7 III / FE 35mm F1.4 GM / ISO 500, F1.4, 1/10"
         captionPosition="TRAILING_BOTTOM"
       >
-        <img src={photo06SDR.src} alt="" />
-        <img src={photo06HDR.src} alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-06-sdr.jpg" alt="" />
+        <img src="/assets/2023-06-xdr-photos/photo-06-hdr.avif" alt="" />
       </Picture>
 
       <p>HDR が最も映えるのは、やはり夜景でしょう。</p>
