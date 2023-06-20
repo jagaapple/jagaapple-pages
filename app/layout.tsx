@@ -38,7 +38,7 @@ export default function RootLayout(props: React.PropsWithChildren<unknown>) {
           <span>{appCopyright}</span>
           <div>
             Created by{" "}
-            <a className={mixinStyles.textLink} href="https://tawitter.com/jagaapple" target="_blank">
+            <a className={mixinStyles.textLink} href="https://twitter.com/jagaapple" target="_blank">
               {appTwitterId}
             </a>
             .
